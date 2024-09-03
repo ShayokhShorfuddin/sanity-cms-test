@@ -7,7 +7,7 @@ const config = defineConfig({
   dataset: "production",
   title: "Testing my sanity with Sanity CMS and Next.js",
 
-  apiVersion: "09-03-2024",
+  apiVersion: "2024-09-03",
   basePath: "/admin",
   plugins: [deskTool()],
 
