@@ -13,7 +13,7 @@ export default async function Project({ params }: Props) {
 
   return (
     <div>
-      <Image src={project.image} alt={project.name} width={500} />
+      <Image src={project.image} alt={project.name} height={500} width={500} />
       <p> {project.name} </p>
     </div>
   );

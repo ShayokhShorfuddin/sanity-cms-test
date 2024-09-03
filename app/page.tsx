@@ -1,6 +1,7 @@
 import { getProjects } from "@/sanity/sanity.utils";
 import { Project } from "@/types/Project";
 import Image from "next/image";
+import Link from "next/link";
 
 export default async function Home() {
   const projects = await getProjects();
@@ -11,7 +12,8 @@ export default async function Home() {
 
       {projects.map((project) => (
         <div key={project._id}>
-          <h1> {project.name} </h1>
+          <Link href={`/projects/${project.slug}`}>{project.name}</Link>
+
           <Image
             src={project.image}
             alt={project.name}
